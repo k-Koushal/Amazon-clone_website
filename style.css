@@ -1,0 +1,101 @@
+body{
+    background:white;
+    margin:0;
+    padding:0;
+}
+.navbar{
+    background:#131A22;
+    justify-content:space-evenly;
+    padding:0;
+}
+.navbar-nav{
+    position: relative;
+    width:100%;
+    justify-content:space-evenly;
+}
+.navbar-brand{
+    height:100%;
+}
+.navbar-brand>img{
+    width:120px;
+}
+.navbar-brand:hover{
+     border:2px solid #3d546e;
+}
+.nav-one{
+    width:105px;
+    padding:3%;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0;
+}
+.con1{
+    text-align:bottom;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.one,.two{
+    margin-bottom: 0rem;
+}
+.one{
+    position: relative;
+    top:5px;
+    font-size: 12px;
+}
+.two{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:0;
+}
+.search{
+    width:60%;
+    position: relative;
+    align-items: center;
+    padding-top: 5px;
+}
+.form-control{
+    width:100%;
+}
+.account{
+    width:150px;
+    padding:0;
+}
+.order{
+    width:150px;
+    border:1px solid yellow;
+    padding:0;
+    align-items: top;
+}
+.cart{
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-icon{
+    font-size: 25px;
+}
+.cart-count{
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+}
+.category{
+    width:100%;
+    align-items: center;
+    padding:1px 5px;
+}
+.nav-item:hover{
+    border:1px solid white;
+}
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: -300px;
+}
+.carousel>img{
+    mask-image: linear-gradient(to bottom,rgb(0, 0, 0,1),rgb(0, 0, 0,0));
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>Amazon Shopping</title>
+    <!--title icon-->
+    <link rel="icon" href="download.png">
+
+    <!-- Bootstrap CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--css-->
+<link rel="stylesheet" href="style.css">
+<!--Fontawsome-->
+<script src="https://kit.fontawesome.com/6606e36ae0.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      
+        <div class="container-fluid">
+              <!--logo-->
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="logo"></a>
+             <!--toggle button-->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button><!--/button-->
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><!--location-->
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="col nav-one">
+                                <div class="con1">
+                                    <span><i class="fa-solid fa-location-dot" style="color:white"></i></span>
+                                </div>
+                                <div class="con2">
+                                    <p class="one">Hello!</p>
+                                    <p class="two">Location <i class="fa-solid fa-caret-down" style="color:rgb(173, 173, 173)"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                      </li><!--/location-->
+
+                      <li class="nav-item search"><!--search Bar-->
+                        <a class="nav-link active" aria-current="page" href="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1" style="background:#FEBD69"><i class="fa-solid fa-magnifying-glass" style="color:black"></i></span>
+                          </div>
+                        </a>
+                      </li><!--/search bar-->
+
+                      <li class="nav-item"><!--login-->
+                        <a class="nav-link active" aria-current="page" href="#">
+                                <p class="one">Hello!</p>
+                                <p class="two">Accounts & Lists <i class="fa-solid fa-caret-down" style="color:rgb(187, 187, 187)"></i></p>
+                        </a>
+                        </li><!--/login-->
+
+                        <li class="nav-item"><!--orders-->
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="one">Returns!</p>
+                                <p class="two">& Orders <i class="fa-solid fa-caret-down" style="color:rgb(187, 187, 187)"></i></p>
+                            </a>
+                        </li><!--orders-->
+
+                        <li class="nav-item"><!--cart-->
+                            <div class="cart">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                                    <span class="cart-count">Cart</span>
+                                </a>
+                            </div>
+                           
+                        </li><!--/cart-->
+                </ul>
+
+              </div><!--/nav-collapse-->
+
+        </div><!--/container-fluid-->
+
+    </nav><!--/navbar-->
+
+    
+ <!--Category nav-->
+  <nav class="navbar category navbar-expand-lg navbar-dark">
+        <div class="container-fluid " style="background:#232F3E; color:white;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;"><i class="fa-solid fa-bars" style="color:white;"></i> All</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Best Seller</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Mobiles</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Customer Service</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Today's Deals</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Electronics</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Fashion</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Prime <i class="fa-solid fa-caret-down" style="color:rgb(187, 187, 187); font-size: 14px;"></i> </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">New Releases</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Books</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Home & Kitchen</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Amazon Pay</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Computers</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white;font-size:14px;">Coupons</span></a>
+                    </li>
+                </ul>
+            
+                
+        </div><!--/category nav-->
+    </nav>
+    <!--carousel-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <a href="#"><img src="https://i.ibb.co/pLBNDwJ/61pxhb-Xv8t-L-SX3000.jpg" class="d-block w-100" alt="Mobile & Accessories"></a>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#"><img src="https://i.ibb.co/ch8LJ44/71f-JN1o-Dw-EL-SX3000.jpg" class="d-block w-100" alt="Computers and accessories"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="https://i.ibb.co/qYVhMg8/71e-BXpqw-YXL-SX3000.jpg" class="d-block w-100" alt="Prime"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="https://i.ibb.co/6XbNsB2/613-Ra2b30c-L-SX3000.jpg" class="d-block w-100" alt="Home Electronics"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="https://i.ibb.co/0jfSwx8/51-Hx5m3-Be7-L-SX3000.jpg" class="d-block w-100" alt="Amazon Pay"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="https://i.ibb.co/LpQCjDf/710-Itjx-Bm-VL-SX3000.jpg" class="d-block w-100" alt="Fashion"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--/Carousel-->
+
+   <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+    
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
