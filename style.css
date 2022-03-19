@@ -1,11 +1,10 @@
 body{
-    background:white;
+    background:rgb(228, 232, 237,1);
     margin:0;
     padding:0;
 }
 .navbar{
     background:#131A22;
-    justify-content:space-evenly;
     padding:0;
 }
 .navbar-nav{
@@ -24,7 +23,6 @@ body{
 }
 .nav-one{
     width:105px;
-    padding:3%;
     color:white;
     display:flex;
     flex-direction: row;
@@ -64,7 +62,6 @@ body{
 }
 .order{
     width:150px;
-    border:1px solid yellow;
     padding:0;
     align-items: top;
 }
@@ -90,13 +87,50 @@ body{
 .nav-item:hover{
     border:1px solid white;
 }
+#navbar-category{
+    background:#232F3E;
+    z-index: 2;
+}
+.navbar-toggler{
+    border:none;
+}
+.navbar-toggler:hover{
+    border:1px solid rgb(133, 133, 133);
+}
 .carousel-control-prev-icon , .carousel-control-next-icon{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 34%;
+    height: 34%;
 }
 .carousel-control-next, .carousel-control-prev {
-    top: -300px;
+    bottom: 58%;
 }
-.carousel>img{
-    mask-image: linear-gradient(to bottom,rgb(0, 0, 0,1),rgb(0, 0, 0,0));
+.carousel{
+    position: relative;
+    margin-bottom: -21%;
+    z-index: -2;
+}
+#rowone{
+    background:linear-gradient(to bottom,rgb(228, 232, 237,0.1),rgb(228, 232, 237,1));
+    padding:0 2.5%;
+}
+#rowonecol{
+    margin:2.5px 7px 2.5px 0px;
+    text-align: start;
+    background:white;
+}
+.sign-in-text{
+    margin-bottom: 10px;
+    
+}
+.sign-in-text>span{
+    font-size:17px;
+    text-align:left;
+    font-weight:bold;
+}
+.sign-in-button{
+    border-radius: 0.6rem;
+    width: 100%;
+    font-size:15px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
