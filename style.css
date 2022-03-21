@@ -97,91 +97,120 @@ body{
 .navbar-toggler:hover{
     border:1px solid rgb(133, 133, 133);
 }
+#carousel-container{
+    margin-bottom: -20%;
+    height: auto;
+}
 .carousel-control-prev-icon , .carousel-control-next-icon{
-    width: 21%;
-    height: 21%;
+    width: 30%;
+    height: 30%;
 }
-.carousel-control-next, .carousel-control-prev {
-    bottom: 58%;
-}
-.carousel{
+#carouselExampleInterval{
     position: relative;
-    margin-bottom: -21%;
     z-index: -1;
 }
-#productcards{
-    width:100%;
-    z-index:-1;
+
+#productcontainer{
+    background:linear-gradient(to bottom,rgb(228, 232, 237,0.4),rgb(228, 232, 237,0.5),rgb(228, 232, 237,1));
 }
-#rowone{
-    background:linear-gradient(to bottom,rgb(228, 232, 237,0.3),rgb(228, 232, 237,0.5),rgb(228, 232, 237,1));
-    padding:0 2.5%;
-}
-#rowonecol{
-    margin: 2.5px 2px 11.5px 8px;
-    text-align: start;
-    background:white;
-    padding: 16px;
-}
-.sign-in-text{
-    margin-bottom: 10px;
-    
-}
-.sign-in-text>span{
-    font-size:17px;
-    text-align:left;
-    font-weight:bold;
-    margin-bottom: 20px;
-}
-.sign-in-button{
-    border-radius: -0.4rem;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 21px;
-    margin-top: 8%;
-    background: #ffc107;
-}
-#sign-in{
-    background:white;
-    height:max-content;
-    margin-top:1%;
-    padding:15px;
-    margin-left: 12px;
-    margin-right: 0;
-    width: 21%;
-}
-.content{
-    width: 108%;
-    display:flex;
-    flex-direction: row;
-}
-.box{
+
+#col{
     position: relative;
-    width: 45%;
     padding:0;
-    margin: 1%;
-    margin-top: 5%;
 }
-.box>a{
-    text-decoration:none;
+
+.row{
+     position: relative; 
+    justify-content: center;
+    height:100%;
 }
-.box>a>span{
-    font-size: 11px;
-    font-weight: 500;
-    color:black;
+#productcard{
+    width:98%;
+    
+    display:flex;
+    flex-direction: column;
+    background:white;
+
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom:10px;
 }
-.box>a>img{
+#productcard1title{
     width:100%;
-    height:85%;
+    margin-right:0% ;
+    margin-top: 4%;
+    height: 62px;
+}
+#productcard1title>span{
+    font-size:100%;
+    font-weight:bold;
+    height:10%;
+}
+
+#productcardrow1{
+    position: relative; 
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 4%;
+    height:150px;
+}
+#productcardrowcol{
+    position: relative; 
+    display:flex;
+    flex-direction:row;
+    padding:0 1%;
+}
+#productcardrowcol>a{
+    text-decoration:none;
+    color:black;
+    font-size: 12px;
+    font-weight: 500;
+   
+}
+#productcardrowcol>a>img{
+    width: 100%;
+    height: 75%;
 }
 .morelink>a{
+    position: relative; 
     text-decoration: none;
     color:rgb(0, 111, 139);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 .morelink{
-    margin-top: 5%;
+    margin-bottom: 4%;;
+}
+#sign-in{
+    width:95%;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background:white;
+    margin-top: 1%;
+}
+#sign-in-title>span{
+    font-size:100%;
+    font-weight:bold;
+    height:10%;
+}
+#sign-in-title{
+    padding-top:10%;
+}
+.sign-in-button {
+    border-radius: 0.4rem;
+    width: 200px;
+    height: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10%;
+    background: #ffc107;
+}
 
+#sign-in-row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
 }
