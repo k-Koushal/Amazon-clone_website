@@ -85,6 +85,7 @@ body{
     overflow: auto;
     white-space: nowrap;
     justify-content: center;
+    height:35px;
 
 }
 #navbar2>a{
@@ -94,7 +95,7 @@ body{
     color: white;
     text-align: center;
     align-items: center;
-    padding: 14px;
+    padding: 12px;
     text-decoration: none;
 }
 #navbar2>a:hover{
