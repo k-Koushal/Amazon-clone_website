@@ -80,14 +80,20 @@ body{
 }
 #navbar2{
     background:#232F3E;
+    display:flex;
     z-index: 2;
     overflow: auto;
     white-space: nowrap;
+    justify-content: center;
+
 }
 #navbar2>a{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: white;
     text-align: center;
+    align-items: center;
     padding: 14px;
     text-decoration: none;
 }
@@ -97,7 +103,7 @@ body{
 }
 /* width */
 ::-webkit-scrollbar {
-    height: 5px;
+    height: 2px;
     width:5px;
 }
   /* Track */
@@ -135,7 +141,7 @@ body{
 }
 
 #productcontainer{
-    background:linear-gradient(to bottom,rgb(228, 232, 237,0.4),rgb(228, 232, 237,0.5),rgb(228, 232, 237,1));
+    background:linear-gradient(to bottom,rgb(228, 232, 237,0.5),rgb(228, 232, 237,1));
 }
 
 #col{
@@ -210,7 +216,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background:white;
+    background:rgb(255, 255, 255);
     margin-top: 1%;
     border-radius: 1rem;
 }
@@ -218,6 +224,7 @@ body{
     font-size:100%;
     font-weight:bold;
     height:10%;
+    text-shadow: 0 0 5px white;
 }
 #sign-in-title{
     padding-top:10%;
@@ -230,6 +237,8 @@ body{
     font-weight: 500;
     margin-top: 10%;
     background: #ffc107;
+    box-shadow:0px 0px 10px #89c0ff;
+    text-shadow: 1px 1 5px white;
 }
 
 #sign-in-row{
