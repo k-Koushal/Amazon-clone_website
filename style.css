@@ -84,14 +84,12 @@ body{
     z-index: 2;
     overflow: auto;
     white-space: nowrap;
-    justify-content: center;
-    height:35px;
+    justify-content: flex-start;
 
 }
 #navbar2>a{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     color: white;
     text-align: center;
     align-items: center;
