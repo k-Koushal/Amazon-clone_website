@@ -523,14 +523,22 @@ footer{
 .div1{
     display:flex;
     flex-direction:row; 
-    justify-content:space-evenly;
+    justify-content:center;
 
 }
 .footerlogo>img{
     width:120px;
 }
+.footerlogo{
+    display:flex;
+    margin-right: 5%;;
+}
 .footerlang>button{
     font-size:clamp(0.2rem,3vw,0.8rem);
+    background:none;
+    border:1px solid rgb(160, 160, 160);
+    border-radius: 0.2rem;
+    color:white
 }
 #country {
     display: flex;
