@@ -1,39 +1,39 @@
-:root{
-    --clr-light:rgb(223, 223, 223);
-    --clr-dark:black;
-    --clr-navBarMain:#131A22;
-    --clr-navBar2:#232F3E;
-    --clr-navBarText:rgb(255, 255, 255);
-    --clr-clrOrange:#ffc107;
+:root {
+    --clr-light: rgb(223, 223, 223);
+    --clr-dark: black;
+    --clr-navBarMain: #131A22;
+    --clr-navBar2: #232F3E;
+    --clr-navBarText: rgb(255, 255, 255);
+    --clr-clrOrange: #ffc107;
     --clr-bodyGradient: rgb(228, 232, 237, 0.5);
-    --clr-bodyGradientEnd:rgb(193, 205, 220);
-    --clr-productCard:rgba(240, 240, 240, 0.995);
-    --clr-cardText:black;
+    --clr-bodyGradientEnd: rgb(193, 205, 220);
+    --clr-productCard: rgba(240, 240, 240, 0.995);
+    --clr-cardText: black;
     --clr-links: rgb(0, 111, 139);
-    --clr-goTop:#37475A;
-    --clr-lightThemeIcon:rgb(255, 242, 0);
-    --clr-carousel:white;
+    --clr-goTop: #37475A;
+    --clr-lightThemeIcon: rgb(255, 242, 0);
+    --clr-carousel: white;
 
-    --foreground:var(--clr-dark);
-    --background:var(--clr-light);
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
 
 
 }
-.darkmode{
-    --clr-light:white;
-    --clr-dark:black;
-    --clr-bodyGradient:rgba(54, 54, 54, 0.5);
-    --clr-bodyGradientEnd:rgba(19, 19, 20, 1);
-    --clr-productCard:rgba(44, 43, 43, 0.685);
-    --clr-cardText:white;
-    --clr-links:rgb(96, 173, 192);
-    --clr-lightThemeIcon:rgb(103, 141, 185);
-    --clr-carousel:rgb(198, 198, 198);
-  
-    
-    --foreground:var(--clr-light);
-    --background:var(--clr-dark)
 
+.darkmode {
+    --clr-light: white;
+    --clr-dark: black;
+    --clr-bodyGradient: rgba(54, 54, 54, 0.5);
+    --clr-bodyGradientEnd: rgba(19, 19, 20, 1);
+    --clr-productCard: rgba(44, 43, 43, 0.685);
+    --clr-cardText: white;
+    --clr-links: rgb(96, 173, 192);
+    --clr-lightThemeIcon: rgb(103, 141, 185);
+    --clr-carousel: rgb(198, 198, 198);
+
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark)
 }
 
 
@@ -41,48 +41,67 @@
 
 body {
     background: var(--background);
-    color:var(--foreground);
+    color: var(--foreground);
     margin: 0;
     padding: 0;
 }
-#popup{
-    position:absolute;
-    z-index:100;
-    display:none;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    height:100vh;
-    background:rgba(0, 0, 0, 0.582)
-  
-}
-.mainspace{
-    display:flex;
-    position: inherit;
-    width:60%;
-    margin:auto;
+
+#popup {
+    position: absolute;
+    z-index: 100;
+    display: none;
     justify-content: center;
-}
-.popupcontent{
-    position:relative;
-    width:50%;
-}
-#PopupImage{
-    width:100%;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
-#popupClose{
-    position:absolute;
-    right:2%;
-    top:3%;
-    font-size: clamp(0.5em,3vw,1em);
-    background:white;
-    padding:0 1.5%;
-    cursor:pointer;
+
+.mainspace {
+    display: flex;
+    position: inherit;
+    width: 60%;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.popupcontent {
+    position: relative;
+    width: 50%;
+}
+
+#PopupImage {
+    width: 100%;
+    box-shadow: 8px 8px 64px #bbbbbb, -8px -8px 64px #65656567;
+
+}
+
+#popupClose {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    font-size: clamp(0.5em, 3vw, 1em);
+    background: white;
+    padding: 0 1.5%;
+    cursor: pointer;
     border-radius: 10%;
 }
+
+@media screen and (max-width:800px) {
+    .popupcontent {
+        position: relative;
+        width: 100%;
+    }
+}
+
 .navbar {
-    background:var(--clr-navBarMain);
+    background: var(--clr-navBarMain);
     padding: 0;
 }
 
@@ -106,7 +125,7 @@ body {
 
 .nav-one {
     width: 105px;
-    color:var(--clr-navBarText);
+    color: var(--clr-navBarText);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,7 +190,7 @@ body {
 
 .cart-count {
     font-size: 15px;
-  
+
 }
 
 #navbar2 {
@@ -184,11 +203,13 @@ body {
     align-items: center;
 
 }
-.theme{
+
+.theme {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #navbar2>a {
     display: flex;
     flex-direction: row;
@@ -250,7 +271,7 @@ body {
 }
 
 #productcontainer {
-    background: linear-gradient(to bottom, var(--clr-bodyGradient),var(--clr-bodyGradientEnd))!important;
+    background: linear-gradient(to bottom, var(--clr-bodyGradient), var(--clr-bodyGradientEnd)) !important;
 }
 
 #col {
@@ -262,7 +283,7 @@ body {
 #body-container-row-one {
     padding: 0 2%;
     margin-bottom: 15px;
-    background:var(--background)
+    background: var(--background)
 }
 
 .row {
@@ -333,7 +354,7 @@ body {
 
 .morelink {
     margin-bottom: 4%;
-    
+
 }
 
 #sign-in {
@@ -363,7 +384,7 @@ body {
     font-weight: 500;
     margin-top: 10%;
     background: var(--clr-clrOrange);
-/*     box-shadow: 0px 0px 10px #89c0ff;
+    /*     box-shadow: 0px 0px 10px #89c0ff;
     text-shadow: 1px 1 5px white; */
 }
 
@@ -426,20 +447,22 @@ body {
     position: relative;
     width: 100%;
     height: max-content;
-    background:var(--clr-productCard);
+    background: var(--clr-productCard);
     padding-top: 50px;
 }
-#productcarousel-row-title{
-    position:absolute;
-    top:15px;
-    left:30px;
-    font-size:clamp(0.2rem,4vw,1.1rem);
+
+#productcarousel-row-title {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: clamp(0.2rem, 4vw, 1.1rem);
     font-weight: bold;
 }
-#productcarousel-row-title>a{
-    text-decoration:none;
-    font-size: clamp(0.1rem,3vw,0.8rem);
-    color:var(--clr-links);
+
+#productcarousel-row-title>a {
+    text-decoration: none;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
+    color: var(--clr-links);
 }
 
 #productcarousel-col {
@@ -535,120 +558,141 @@ body {
 .carousel-control-prev-icon {
     background-image: url(https://img.icons8.com/ios-filled/70/000000/chevron-left.png);
 }
-.carousel-control-prev-icon ,.carousel-control-next-icon {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 2rem;
     height: 3rem;
 }
+
 /* ROW Four */
 .row4productcardimage1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(https://i.ibb.co/9T88y3b/2-X-Desktop-CC-372x232-SY608-CB626348882.jpg) no-repeat!important;
-    background-size: cover!important;
-    background-position-x: 50%!important;
+    background: url(https://i.ibb.co/9T88y3b/2-X-Desktop-CC-372x232-SY608-CB626348882.jpg) no-repeat !important;
+    background-size: cover !important;
+    background-position-x: 50% !important;
 }
-.row4productcardimage2{
+
+.row4productcardimage2 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(https://i.ibb.co/SVHZnq1/Comforters-Desktop-758x604-SY608-CB413974303.jpg) no-repeat!important;
-    background-size: cover!important;
-    background-position-x: 50%!important;
+    background: url(https://i.ibb.co/SVHZnq1/Comforters-Desktop-758x604-SY608-CB413974303.jpg) no-repeat !important;
+    background-size: cover !important;
+    background-position-x: 50% !important;
 }
-.row4productcardimage3{
+
+.row4productcardimage3 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(https://i.ibb.co/nkpb1hC/xcm-banners-bau-pc-cc-379x304-758x608-in-en-SY608-CB643325605.jpg) no-repeat!important;
-    background-size: cover!important;
-    background-position-x: 50%!important;
+    background: url(https://i.ibb.co/nkpb1hC/xcm-banners-bau-pc-cc-379x304-758x608-in-en-SY608-CB643325605.jpg) no-repeat !important;
+    background-size: cover !important;
+    background-position-x: 50% !important;
 }
-.row4productcardimage4{
+
+.row4productcardimage4 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(https://i.ibb.co/3rYVwdF/PC-Category-Card-758x608-Jan22-SY608-CB647732771.jpg) no-repeat!important;
-    background-size: cover!important;
-    background-position-x: 50%!important;
+    background: url(https://i.ibb.co/3rYVwdF/PC-Category-Card-758x608-Jan22-SY608-CB647732771.jpg) no-repeat !important;
+    background-size: cover !important;
+    background-position-x: 50% !important;
 }
+
 /* Footer*/
-footer{
+footer {
     margin-top: 30px;
 }
-.gotop{
-    position:relative;
-    width:100%;
+
+.gotop {
+    position: relative;
+    width: 100%;
     text-decoration: none;
 }
-#gotop{
+
+#gotop {
     position: relative;
-    width:100%;
-    height:40px;
+    width: 100%;
+    height: 40px;
     background: var(--clr-goTop);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--clr-navBarText);
-    font-size: clamp(0.3rem,3vw,1rem);
+    color: var(--clr-navBarText);
+    font-size: clamp(0.3rem, 3vw, 1rem);
     font-weight: 500;
 }
-#footerlinks{
-    display:flex;
+
+#footerlinks {
+    display: flex;
     flex-direction: column;
-    background:var(--clr-navBar2);
-    padding-top:30px;
+    background: var(--clr-navBar2);
+    padding-top: 30px;
 }
-#footerlinks>hr{
-    color:var(--clr-light);
+
+#footerlinks>hr {
+    color: var(--clr-light);
 }
-.div1{
-    display:flex;
-    flex-direction:row; 
-    justify-content:center;
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
-.footerlogo>img{
-    width:120px;
+
+.footerlogo>img {
+    width: 120px;
 }
-.footerlogo{
-    display:flex;
-    margin-right: 5%;;
+
+.footerlogo {
+    display: flex;
+    margin-right: 5%;
+    ;
 }
-.footerlang>button{
-    font-size:clamp(0.2rem,3vw,0.8rem);
-    background:none;
-    border:1px solid rgb(160, 160, 160);
+
+.footerlang>button {
+    font-size: clamp(0.2rem, 3vw, 0.8rem);
+    background: none;
+    border: 1px solid rgb(160, 160, 160);
     border-radius: 0.2rem;
-    color:var(--clr-navBarText);
+    color: var(--clr-navBarText);
 }
+
 #country {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
     margin-top: 30px;
-    padding:0 30px;
-    overflow:hidden;
+    padding: 0 30px;
+    overflow: hidden;
 }
-#country>a{
+
+#country>a {
     text-decoration: none;
-     color:var(--clr-navBarText);
-    font-size: clamp(0.08rem,4vw,0.5rem);
-    margin:auto;
-    
+    color: var(--clr-navBarText);
+    font-size: clamp(0.08rem, 4vw, 0.5rem);
+    margin: auto;
+
 }
-.copyright{
-    display:inline-block;
-    background:#131A22;
-    padding:10px 10px;
+
+.copyright {
+    display: inline-block;
+    background: #131A22;
+    padding: 10px 10px;
 }
+
 .copy {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-bottom: 15px;
     color: #ffc107;
-    font-size:clamp(0.1rem,3vw,0.8rem) ;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
 }
+
 .footercontent {
 
     margin-bottom: 10px;
@@ -657,33 +701,34 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size:clamp(0.1rem,3vw,0.8rem) ;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
 
 }
 
 .footercontent>span:nth-child(2) {
     position: relative;
-    color:#ffc107 ;
-     font-size:clamp(0.1rem,3vw,0.8rem) ;
+    color: #ffc107;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
     text-align: center;
 }
 
 .footercontent>span>b,
 u {
     color: #c2d7ff;
-    font-size:clamp(0.1rem,3vw,0.8rem) ;
+    font-size: clamp(0.1rem, 3vw, 0.8rem);
     font-weight: 600;
 }
+
 .social>a>i {
     color: white;
-    font-size:clamp(0.1rem,3vw,1rem);
+    font-size: clamp(0.1rem, 3vw, 1rem);
     margin-left: 20px;
 }
 
 .social {
     display: flex;
     padding: 0;
-   justify-content:center;
+    justify-content: center;
 }
 
 .social>a>i:hover {
@@ -694,18 +739,20 @@ u {
     padding: 5px;
 
 }
+
 /*Light/Dark Theme */
-#dark-mode-toggle{
-    
-    background:#232F3E;
-    border:none;
+#dark-mode-toggle {
+
+    background: #232F3E;
+    border: none;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     margin-left: 1%;
-    margin:0.7%;
+    margin: 0.7%;
 }
-#colorThemeIcon>svg{
-    fill:var(--clr-lightThemeIcon);
- 
+
+#colorThemeIcon>svg {
+    fill: var(--clr-lightThemeIcon);
+
 }
