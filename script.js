@@ -8,13 +8,10 @@ darkModeToggle.addEventListener('click',()=>{
 }) 
 
 //! Popup-Window
-function popupWindow(){
-    document.querySelector('#popup').style.display='flex';
-
-}
 let popupCloseButton=document.querySelector('#popupClose')
 console.log(popupCloseButton)
 popupCloseButton.addEventListener('click',()=>{
     console.log('clicked')
     document.querySelector('#popup').style.display='none';
+    document.getElementById('popup').removeElement('video')
 })
