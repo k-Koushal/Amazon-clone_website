@@ -98,6 +98,9 @@ body {
         position: relative;
         width: 100%;
     }
+    .mainspace{
+        margin-top:-5rem;
+    }
 }
 
 .navbar {
