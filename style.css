@@ -830,8 +830,18 @@ u {
     margin-left: 1%;
     margin: 0.7%;
 }
+.lightmode{
 
-#colorThemeIcon>svg {
-    fill: var(--clr-lightThemeIcon);
-
+    background-image: url('https://img.icons8.com/fluency/30/000000/light-on.png');
+    width:35px;
+    height:35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.darkModeIcon{
+    background-image: url('https://img.icons8.com/fluency/30/ffffff/light-off.png');
+    width:35px;
+    height:35px;
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -1,10 +1,15 @@
 //!dark/Light Mode
 const darkModeToggle=document.querySelector('#dark-mode-toggle');
+let light=document.querySelector('.lightmode')
 
 darkModeToggle.addEventListener('click',()=>{
-    document.body.classList.toggle('darkmode')
+    document.body.classList.toggle('darkmode');
 
 }) 
+
+light.addEventListener('click',function(light){
+    light.target.classList.toggle('darkModeIcon')
+})
 
 //! Popup-Window
 let popupCloseButton=document.querySelector('#popupClose')
